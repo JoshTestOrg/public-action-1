@@ -18,5 +18,5 @@ jobs:
         run: echo Hello, world!
       - name: Publish results
         run: echo Publishing test results
-      - name: Upload artifacts
-        run: exit 1
+#       - name: Upload artifacts
+#         run: exit 1
