@@ -1,0 +1,22 @@
+name: CI push
+
+on:
+  push:
+    branches: [test]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Build project
+        run: |
+          echo Building your project
+          echo Resolving dependencies
+          echo Build complete
+      - name: Run tests
+        run: echo Hello, world!
+      - name: Publish results
+        run: echo Publishing test results
+      - name: Upload artifacts
+        run: exit 1
